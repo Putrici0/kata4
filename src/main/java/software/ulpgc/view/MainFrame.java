@@ -1,5 +1,6 @@
 package software.ulpgc.view;
 
+import software.ulpgc.control.SQLiteTitleReader;
 import software.ulpgc.model.Histogram;
 
 import javax.swing.*;

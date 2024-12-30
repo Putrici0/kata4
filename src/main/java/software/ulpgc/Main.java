@@ -1,5 +1,6 @@
 package software.ulpgc;
 
+import software.ulpgc.control.SQLiteTitleReader;
 import software.ulpgc.control.TitleLoader;
 import software.ulpgc.control.TitleTypeHistogram;
 import software.ulpgc.model.Histogram;
