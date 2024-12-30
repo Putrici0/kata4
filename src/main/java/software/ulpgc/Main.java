@@ -1,6 +1,5 @@
 package software.ulpgc;
 
-import org.w3c.dom.events.UIEvent;
 import software.ulpgc.control.TitleLoader;
 import software.ulpgc.control.TitleTypeHistogram;
 import software.ulpgc.model.Histogram;
