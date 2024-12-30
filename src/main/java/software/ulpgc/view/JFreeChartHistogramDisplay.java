@@ -9,19 +9,18 @@ import software.ulpgc.model.Histogram;
 import javax.swing.*;
 
 public class JFreeChartHistogramDisplay extends JPanel implements HistogramDisplay {
-    @Override
-    public void display(Histogram histogram) {
-        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        for (String key : histogram.keys())
-            dataset.addValue(histogram.valueOf(key), "Frequency", key);
-        JFreeChart barchart = ChartFactory.createBarChart(
-                histogram.title(),
-                "Categories",
-                "Fequency",
-                dataset
-        );
-        ChartPanel comp = new ChartPanel(barchart);
-        comp.setSize(1000, 800);
-        add(comp);
-    }
+	@Override
+	public void display(Histogram histogram) {
+		DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+		for (String key : histogram.keys())
+			dataset.addValue(histogram.valueOf(key), "Frequency", key);
+		JFreeChart barChart = ChartFactory.createBarChart(
+				histogram.title(),
+				"Categories",
+				"Frequency",
+				dataset);
+		ChartPanel comp = new ChartPanel(barChart);
+		comp.setSize(1000,800);
+		add(comp);
+	}
 }

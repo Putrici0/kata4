@@ -6,5 +6,5 @@ import java.io.IOException;
 import java.util.Iterator;
 
 public interface TitleReader {
-    Iterator<Title> read() throws IOException;
+	Iterator<Title> read() throws IOException;
 }
